@@ -1,0 +1,19 @@
+{
+  "name": "discordbot_movemessage",
+  "version": "1.0.0",
+  "description": "機器人權限設定：\r - PRESENCE INTENT\r - SERVER MEMBERS INTENT\r - MESSAGE CONTENT INTENT\r 皆打開",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "keywords": []
+}
