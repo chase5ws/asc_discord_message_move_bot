@@ -53,7 +53,7 @@ client.on(Events.MessageUpdate, async (oldMessage, newMessage) => {
         limit: 2,
       });
       const fetchedMessage = fetchedMessages.first();
-      await fetchedMessage.edit("@everyone " + newMessage.content);
+      await fetchedMessage.edit("<@1131967125335048293>" + newMessage.content);
     }
   }
 });
