@@ -27,7 +27,7 @@ client.on(Events.MessageCreate, async (message) => {
         files: [attachment.url],
       });
     } else {
-      await postChannel.send("@everyone " + message.content);
+      await postChannel.send("<@1131967125335048293>" + message.content);
     }
   }
 });
