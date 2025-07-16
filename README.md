@@ -1,11 +1,10 @@
 # Discord Channel Sync Bot
 
-![version](https://img.shields.io/badge/version-1.0.0-blue)
-![license](https://img.shields.io/badge/license-MIT-green)
-![platform](https://img.shields.io/badge/platform-Node.js-yellow)
-![GitHub issues](https://img.shields.io/github/issues/your-repo/discord-channel-sync-bot)
-![GitHub stars](https://img.shields.io/github/stars/your-repo/discord-channel-sync-bot)
-![GitHub forks](https://img.shields.io/github/forks/your-repo/discord-channel-sync-bot)
+![version](https://img.shields.io/badge/version-1.0.0-green)
+![license](https://img.shields.io/badge/license-MIT%20%2B%20-blue)
+![node](https://img.shields.io/badge/Node.js-16%2B-orange)
+![discordjs](https://img.shields.io/badge/discord.js-14.x-lightgrey)
+![pm2](https://img.shields.io/badge/pm2-supported-brightgreen)
 ![icon](asset/icon.png)
 
 ---
