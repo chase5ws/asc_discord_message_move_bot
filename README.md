@@ -49,7 +49,7 @@
      "CHANNEL_POST": "目標頻道ID"
    }
    ```
-   - `token`：你的 Discord Bot Token
+   - `token`：你的 Discord Bot Token(可以設定空值在執行端從新輸入以保護token隱私)
    - `CHANNEL_LISTEN`：要監聽的來源頻道 ID 陣列
    - `CHANNEL_POST`：要同步發送的目標頻道 ID
 

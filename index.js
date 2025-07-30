@@ -6,6 +6,35 @@ const { Client, Events, GatewayIntentBits } = require("discord.js");
 const { token, CHANNEL_LISTEN, CHANNEL_POST } = require("./config.json");
 // 引入保持伺服器運行的keep_alive模組
 const keep_alive = require("./keep_alive.js");
+// 如果token為空，要求使用者輸入並保存
+async function checkAndGetToken() {
+  if (!token || token.trim() === "") {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    // 提示使用者輸入token
+    return new Promise((resolve, reject) => {
+      rl.question('請輸入您的 Discord Token: ', (inputToken) => {
+        if (!inputToken || inputToken.trim() === "") {
+          reject(new Error("Token 不能為空"));
+        } else {
+          // 儲存新的 token 回 config.json
+          token = inputToken.trim();
+          const updatedConfig = { token, CHANNEL_LISTEN, CHANNEL_POST };
+          fs.writeFileSync(configPath, JSON.stringify(updatedConfig, null, 2));
+
+          console.log('Token 已更新並儲存');
+          rl.close();
+          resolve(token);
+        }
+      });
+    });
+  } else {
+    return token;
+  }
+}
 
 // 創建一個新的Discord客戶端
 const client = new Client({
