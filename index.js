@@ -8,7 +8,7 @@ const { token, CHANNEL_LISTEN, CHANNEL_POST } = require("./config.json");
 const keep_alive = require("./keep_alive.js");
 // 如果token為空，要求使用者輸入並保存
 async function checkAndGetToken() {
-  if (!token || token.trim() === "") {
+  if (!token || token.trim() === "null") {
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout
