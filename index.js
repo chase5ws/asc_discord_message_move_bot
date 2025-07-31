@@ -16,7 +16,7 @@ const rl = readline.createInterface({
 });
 
 // 如果token為null，要求使用者輸入
-if (token === "") {
+if (token == null) {
   rl.question("Please enter your Discord bot token: ", (inputToken) => {
     if (!inputToken) {
       console.log("Token is required to continue!");
