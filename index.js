@@ -58,7 +58,7 @@ function loginBot(token) {
           files: [attachment.url],   // 發送附件的URL
         });
       } else {
-        await postChannel.send("<@645207270728138774>" + message.content); //通知身分組
+        await postChannel.send("有問題都可以詢問群主:<@645207270728138774>\n" + message.content); //通知身分組
       }
     }
   });
@@ -93,5 +93,6 @@ function loginBot(token) {
   // 登入Discord伺服器
   client.login(token);
 }
+
 
 
