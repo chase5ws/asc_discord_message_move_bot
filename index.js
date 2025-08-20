@@ -58,7 +58,7 @@ function loginBot(token) {
           files: [attachment.url],   // 發送附件的URL
         });
       } else {
-        await postChannel.send("<@&1131967125335048293>" + message.content);
+        await postChannel.send("<@&1235540757616656384>" + message.content); //通知身分組
       }
     }
   });
@@ -93,3 +93,4 @@ function loginBot(token) {
   // 登入Discord伺服器
   client.login(token);
 }
+
