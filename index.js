@@ -9,11 +9,11 @@ const keep_alive = require("./keep_alive.js");
 // 引入readline模組
 const readline = require("readline");
 
-// 建立readline介面
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// // 建立readline介面
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
 // 如果token為null，要求使用者輸入
 if (token == null) {
