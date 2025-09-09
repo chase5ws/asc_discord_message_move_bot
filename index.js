@@ -58,7 +58,7 @@ function loginBot(token) {
           files: [attachment.url],   // 發送附件的URL
         });
       } else {
-        await postChannel.send("有問題都可以詢問群主:<@645207270728138774> 下方為你傳送的訊息\n" + message.content); //通知身分組
+        await postChannel.send("下方為你傳送的訊息\n" + message.content); //通知身分組
       }
     }
   });
