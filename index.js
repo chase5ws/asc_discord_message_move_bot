@@ -8,6 +8,8 @@ const { CHANNEL_LISTEN, CHANNEL_POST, token } = require("./config.json");
 const keep_alive = require("./keep_alive.js");
 // 引入readline模組
 const readline = require("readline");
+const { token } = process.env;
+
 
 // // 建立readline介面
 // const rl = readline.createInterface({
@@ -15,20 +17,20 @@ const readline = require("readline");
 //   output: process.stdout
 // });
 
-// 如果token為null，要求使用者輸入
-if (token == null) {
-  rl.question("Please enter your Discord bot token: ", (inputToken) => {
-    if (!inputToken) {
-      console.log("Token is required to continue!");
-      rl.close();
-      process.exit(1); // 結束程序
-    }
-    // 在此進行登入
-    loginBot(inputToken);
-  });
-} else {
-  loginBot(token);
-}
+// // 如果token為null，要求使用者輸入
+// if (token == null) {
+//   rl.question("Please enter your Discord bot token: ", (inputToken) => {
+//     if (!inputToken) {
+//       console.log("Token is required to continue!");
+//       rl.close();
+//       process.exit(1); // 結束程序
+//     }
+//     // 在此進行登入
+//     loginBot(inputToken);
+//   });
+// } else {
+//   loginBot(token);
+// }
 
 function loginBot(token) {
   // 創建一個新的Discord客戶端
